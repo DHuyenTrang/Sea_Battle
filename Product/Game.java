@@ -1,3 +1,4 @@
+import java.lang.Runtime.Version;
 import java.util.Scanner;
 
 public class Game {
@@ -9,19 +10,26 @@ public class Game {
         System.out.println("~: Vị trí có tàu");
     }
     public void playGame(){
+        Scanner input = new Scanner(System.in);
         Player first = new Player();
         Player second = new Player();
         System.out.println("Xin chào 1st_Player! Hãy đặt các thuyền của bạn.");
         first.setUpBoat();
+        System.out.println("Press any key to continue!");
+        String c = input.next();
         System.out.println("Xin chào 2nd_Player! Hãy đặt các thuyền của bạn.");
         second.setUpBoat();
         int turns = 1;
         while(first.check == 0 && second.check == 0){
             if(turns % 2 == 1){
+                System.out.println("Press any key to continue!");
+                c = input.next();
                 System.out.println("Đến lượt 1st_Player");
                 menuGame(first, second);
             }
             else{
+                System.out.println("Press any key to continue!");
+                c = input.next();
                 System.out.println("Đến lượt 2nd_Player");
                 menuGame(second, first);
             }
@@ -40,9 +48,11 @@ public class Game {
         int option = input.nextInt();
         switch (option){
             case 1:
+                System.out.println("Tình trạng hiện tại của bạn: ");
                 tmp1.showBoard();
+                System.out.println("Press any key to continue!");
+                String c = input.next();
             case 2:
-                tmp2.showBlindBoard();
                 tmp2.beAttacked();
             case 3:
                 return;

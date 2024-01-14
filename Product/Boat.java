@@ -1,3 +1,6 @@
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+
 public class Boat extends BattleField{
 
     private String name;
@@ -19,16 +22,6 @@ public class Boat extends BattleField{
     public void setName(String name) {
         this.name = name;
     }
-    public void checkBoat(int x, int y){
-        int check = 0;
-        for(int i = x_begin; i <= x_end; i++){
-            for(int j = y_begin; i <= y_end; j++){
-                if(getBoard(i, y) == 'o') check++;
-            }
-        }
-        if(check == (x_end - x_begin + 1) * (y_end - y_begin + 1)) System.out.printf("%s đã bị bắn chìm", getName());
-    }
-
     public int getX_begin() {
         return x_begin;
     }
