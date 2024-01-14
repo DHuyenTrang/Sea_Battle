@@ -35,23 +35,11 @@ The project was done by [Đặng Huyền Trang](https://github.com/DHuyenTrang),
 ├── src
 │   ├── main
 │   │   ├── java
-│   │   │   ├── controller
-│   │   │   │   ├── GameController.java
-│   │   │   │   ├── GameMode.java
-│   │   │   │   ├── GameStatus.java
-│   │   │   │   ├── Player.java
-│   │   │   │   ├── Ship.java
-│   │   │   │   ├── ShipType.java
-│   │   │   │   └── Square.java
-│   │   │   ├── model
-│   │   │   │   ├── Board.java
-│   │   │   │   ├── Cell.java
-│   │   │   │   ├── Game.java
-│   │   │   │   ├── GameBoard.java
-│   │   │   │   ├── GameCell.java
-│   │   │   │   ├── GamePlayer.java
-│   │   │   │   ├── GameShip.java
-│   │   │   │   ├── GameSquare.java
+│   │   │   ├── Main.java
+│   │   │   ├── Game.java
+│   │   │   ├── Boat.java
+│   │   │   ├── BattleField.java
+│   │   │   ├── Player.java
 
 
 ```
