@@ -17,6 +17,8 @@ The project was done by [Đặng Huyền Trang](https://github.com/DHuyenTrang),
 - Run the project
 
 ## Demo
+[Link video](https://drive.google.com/file/d/1OaWvLL8ybvl9VAcDQKgP_0V0NqrRJyG9/view?usp=drive_link) 
+
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
